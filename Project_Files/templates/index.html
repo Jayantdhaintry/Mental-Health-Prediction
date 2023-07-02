@@ -61,6 +61,10 @@
     <div class="container">
         <h2>Mental Health Assessment</h2>
 
+        <form action="out" method="post">
+
+      
+
         <div class="question">
             <p>Please provide your age:</p>
             <div class="options">
@@ -368,10 +372,13 @@
                 </label>
             </div>
         </div>
+        <button type="submit" ">Submit</button>
+
+    </form>
 
 
 
-        <button onclick="submitForm()">Submit</button>
+        <!-- <button onclick="submitForm()">Submit</button> -->
     </div>
 
     <script>
@@ -448,12 +455,10 @@
                 .then((json) => {
 
                     if(json.data == 1){
-                        document.body.innerHTML = "YOU ARE FUCKED MF, Go seek a psychiatrist or die in a mental asylum. Ropes and stools are  free there";
-
+                       console.log("paaji talli hai")
                     } else{
-                        document.body.innerHTML = `Although, you don't seem depressed now, wait untill life catches up with you. 
-                        Q 🔻🚩🚩🚩🚩🚩🚩🚩🔺🔻
-                        We were fucked , you too will be`
+                        console.log("paaji tali ni hai")
+                        
                     }
 
                     
